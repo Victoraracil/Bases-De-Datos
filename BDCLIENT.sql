@@ -132,6 +132,9 @@ SELECT nomene_alumne AS Alumno, (nota1 +nota2 + nota3)/3 AS media
 FROM notes_alumne
 
 5-
+SELECT *
+FROM notes_alumne
+WHERE (nota1 + nota2 + nota3)/3 > 6 AND (nota1 LIKE 7 OR nota2 LIKE 7 OR nota3 LIKE 7)
 
 6-
 SELECT cognom
