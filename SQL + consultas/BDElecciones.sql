@@ -344,3 +344,19 @@ WHERE cole = (SELECT cole
                 FROM mesa
                 GROUP BY cole
                 HAVING SUM (nula) > 100)
+
+--20
+SELECT *
+FROM colegio
+WHERE numcole = (SELECT mesa.cole
+                FROM mesa
+                WHERE nula + nulm > 1)
+
+--21
+SELECT siglas, nombre
+FROM partido
+WHERE siglas LIKE (SELECT partido
+                  FROM autonomica
+                  WHERE votos > 1)
+
+--22
