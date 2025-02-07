@@ -1,0 +1,100 @@
+1|MOTOROLA|BUENDIA CANTERO|Antonio|Duque de Medinacelli, 13| |Valencia|8|0|(   )-2028228|C|0,0|
+2|RTC S.A.|LUNA REQUENA|Maria Jesus|Profesor Waksman, 49| |Valencia|8|0|(   )-4031048|C|0,0|
+3|GUYON|ROJAS MORCILLO|Jose|Palencia, 37| |Valencia|8|0|(   )-7011254|C|0,0|
+4|P.P.B.|BORRAS FAURA|Maria Jesus|Narvaez, 31| |Alicante|28|0|(   )-2017402|C|7834305,12|
+5|ARCO|MOLERO HERAS|Pedro|Profesor Waksman, 51| |Alicante|28|0|(   )-4021796|C|0,0|
+6|FCP S.A.|PALOMO VADILLO|Jesus Manuel|Orfila, 85| |Alicante|28|0|(   )-7005208|C|0,0|
+7|MATE|SALGADO CANTERO|Jesus Manuel|Juan Belmonte, 53| |Valencia|8|0|(   )-2006524|C|0,0|
+8|DRAPOSA|GARCIA SASTRE|Angel|Gran Via, 57| |Alicante|28|0|(   )-4014220|C|0,0|
+9|ALCOLEA|CRISTOBAL OLIVA|Reyes|Narvaez, 48| |Valencia|8|0|(   )-7009908|C|0,0|
+10|DEL OLMO|GUERRA ESTEVEZ|Maria Jesus|Profesor Waksman, 14| |Alicante|28|0|(   )-2013692|C|0,0|
+11|CIFERSA|VAZQUEZ AMATO|Reyes|Goya, 33| |Alicante|28|0|(   )-4008714|C|2942949,06|
+12|ATC|AMATO AMATO|Luis|Goyeneche, 60| |Guadalajara|19|0|(   )-7016752|C|2069117,32|
+13|BARNICES DEVA|PELAEZ ESTEVEZ|Federico|Doctor Huya, 88| |Valencia|8|0|(   )-2007004|C|1174628,44|
+14|ZENITH|MOLERO CANTERO|Jesus Manuel|Palacios, 86| |Alicante|28|0|(   )-4016324|C|5518655,64|
+15|INTEL|CASTEL GONZALEZ|Andres|Castellana, 93| |Valencia|8|0|(   )-7000806|C|1339824,64|
+16|LEM|REQUENA CEBRIAN|Federico|Fuencarral, 66| |Granada|18|0|(   )-2001512|C|0,0|
+17|SPOT IBERICA|TORRECILLAS CEBRIAN|Javier|Princesa, 85| |Valencia|8|0|(   )-4013724|C|0,0|
+18|RTC S.A.|ROJAS OLIVA|Reyes|Elche, 39| |Valencia|8|0|(   )-7004592|C|0,0|
+19|REXPACS|TEJERO GUIJARRO|Luis|Bravo Murillo, 76| |Soria|42|0|(   )-2032140|C|0,0|
+20|TALLERES MARFAN|AMATO REQUENA|Maria Jesus|Narvaez, 65| |Valencia|8|0|(   )-4031230|C|0,0|
+21|FESAN|MORCILLO CASTEL|Jose Manuel|Fuencarral, 13| |Valencia|8|0|(   )-7032082|C|0,0|
+22|TALLERES MARFAN|CANTERO LORANCA|Ana|Castro de Oro, 78| |Valencia|8|0|(   )-2011248|C|0,0|
+23|DETECSA|SIEIRO VAZQUEZ|Maria Luisa|Serrano, 91| |Alicante|28|0|(   )-4028016|C|2474654,58|
+24|FIMSA|CANTERO ANTON|Angel|Princesa, 41| |Valencia|8|0|(   )-7011906|C|0,0|
+25|CIFERSA|REQUENA AROCA|Felipe|Roderos, 13| |Alicante|28|0|(   )-2031296|C|0,0|
+26|POLIGAS|COLORADO SOLCHAGA|Julian|Castro Serna , 70| |Valencia|8|0|(   )-4004886|C|2912395,76|
+27|DSE|MONTERO REQUENA|Antonio|Ppe. de Vergara  , 42| |Alicante|28|0|(   )-7026178|C|2520847,42|
+28|GYM|MORCILLO CRISTOBAL|Jose Luis|Princesa, 47| |Soria|42|0|(   )-2002332|C|2688528,76|
+29|DSE|FERNANDEZ ORGUILAR|Oscar|Avila, 88| |Valencia|8|0|(   )-4015688|C|0,0|
+30|PEREIRA|HERAS ROJAS|Jesus Manuel|Goya, 48| |Granada|18|0|(   )-7011426|C|4951218,84|
+31|AOL|PULIDO REVENGA|Alfonso|Pajaritos, 64| |Alicante|28|0|(   )-2006950|C|0,0|
+32|DSE|REQUENA CRISTOBAL|Eloy|Don Quijote, 95| |Alicante|28|0|(   )-4008500|C|313722,02|
+33|ELEUSIS|GONZALEZ LOPEZ|Angel|Serrano, 71| |Valencia|8|0|(   )-7001372|C|0,0|
+34|ALBISA|GUERRA PRIETO|Jose Luis|Profesor Waksman, 8| |Alicante|28|0|(   )-2004460|C|0,0|
+35|ATC|HERAS AROCA|Eloy|Elfo, 22| |Alicante|28|0|(   )-4013396|C|4355603,1|
+36|CARO|PALOMO LOPEZ|Antonio|Serrano, 29| |Valencia|8|0|(   )-7004682|C|0,0|
+37|GRIFFIN S. A.|LOPEZ PANIAGUA|Javier|Bravo Murillo, 94| |Alicante|28|0|(   )-2018346|C|6076421,46|
+38|E.M.M.|MONTERO AROCA|Reyes|Profesor Waksman, 74| |Valencia|8|0|(   )-4015962|C|0,0|
+39|RTP|ROJAS SINDE|Jaime|Alberto Aguilera, 80| |Atienza|19|0|(   )-7030160|C|0,0|
+40|DRAPOSA|CANTERO ANTON|Luis|Bravo Murillo, 88| |Sevilla|41|0|(   )-2013106|C|0,0|
+41|DEPRETOL|REVENGA SALGADO|Julian|Isla Malta, 49| |Sevilla|41|0|(   )-4030136|C|0,0|
+42|TEMINSA|BORRAS AROCA|Pedro|Princesa, 69| |Valencia|8|0|(   )-7012154|C|0,0|
+43|DEL OLMO|PELAEZ TEJERO|Felix|Juan Belmonte, 29| |Valencia|8|0|(   )-2024886|C|0,0|
+44|FCP S.A.|FERNANDEZ LOPEZ|Jaime|Orfila, 46| |Alicante|28|0|(   )-4014620|C|2845183,44|
+45|ROSCO|LARA CANTERO|Antonio|Bravo Murillo, 95| |Valencia|8|0|(   )-7002316|C|0,0|
+46|ADA|MORCILLO MOLINA|Jose Luis|Sancho Pacheco, 78| |Valencia|8|0|(   )-2008808|C|130417,28|
+47|PALCOSA|GUIJARROMOLINA|Angel|Alberto Leon, 58| |Valencia|8|0|(   )-4021274|C|0,0|
+48|HARSHAW|REDONDO RODRIGUEZ|Jose|Ppe. de Vergara  , 68| |Alicante|28|0|(   )-7014264|C|0,0|
+49|ARCOSOL|COLORADO VALDIVIESO|Jesus Manuel|General Aranda, 85| |Valencia|8|0|(   )-2031936|C|3162395,38|
+50|ATR|BOYER HERAS|Antonio|Pedro Villar, 84| |Valencia|8|0|(   )-4027696|C|1571793,1|
+51|TALLERES PAMO|CALLE MORCILLO|Julian|San Jaime, 87| |Valencia|8|0|(   )-7023136|C|0,0|
+52|HIDROPONIA|GARCIA REDONDO|Jose Carlos|Albaida, 53| |Alicante|28|0|(   )-2024322|C|4999547,98|
+53|MOTOROLA|MARADONA CABELLO|Maria Jesus|Bravo Murillo, 71| |Alicante|28|0|(   )-4028132|C|1756132,82|
+54|LLORENS|ROJAS SINDE|Jose Luis|Bravo Murillo, 69| |Alicante|28|0|(   )-7001766|C|9662639,18|
+55|INFERSA|MORCILLO RODRIGUEZ|Jose Manuel|Dragon, 31| |Valencia|8|0|(   )-2026990|C|0,0|
+56|CARLIPS|BORRAS ORGUILAR|Andres|Gran Via, 27| |Valencia|8|0|(   )-4017778|C|0,0|
+57|BECOR|PELAEZ CALLE|Maria Jesus|Bravo Murillo, 68| |Valencia|8|0|(   )-7023176|C|0,0|
+58|FITNESS|SASTRE AROCA|Ana|Pajaritos, 38| |Alicante|28|0|(   )-2007882|C|0,0|
+59|INFERSA|RODRIGUEZ CANTERO|Luisa|Fuencarral, 39| |Alicante|28|0|(   )-4027326|C|0,0|
+60|MACARRON S.A.|PALOMO REQUENA|Oscar|Bravo Murillo, 51| |Alicante|28|0|(   )-7004742|C|4847966,86|
+61|GYM|LORANCA REQUENA|Antonio|Alberto Aguilera, 53| |Malaga|29|0|(   )-2007492|C|0,0|
+62|ENFERSA|ORGUILAR BOYER|Antonio|Castellana, 2| |Valencia|8|0|(   )-4014000|C|2116493,3|
+63|LEM|PRIETO PRIETO|Javier|Jaen, 19| |Valencia|8|0|(   )-7016556|C|0,0|
+64|MONCLISA|FAURA REQUENA|Jose Luis|Goya, 44| |Valencia|8|0|(   )-2022928|C|0,0|
+65|JULIO SOTO|SASTRE SIEIRO|Juan|Alarico, 69| |Granada|18|0|(   )-4022522|C|0,0|
+66|HIDROPONIA|VADILLO RODRIGUEZ|Jose|Bravo Murillo, 95| |Valencia|8|0|(   )-7019192|C|6088441,04|
+67|PALCOSA|VADILLO ORGUILAR|Antonio|Sandoval, 47| |Alicante|28|0|(   )-2014916|C|13735675,4|
+68|MAJISA|CANTERO GARCIA|Jaime|Fuencarral, 95| |Valencia|8|0|(   )-4016912|C|9650181,1|
+69|CASAZUL|PULIDO AMATO|Luis|Jaen, 22| |Valencia|8|0|(   )-7021504|C|0,0|
+70|MATE|CABELLO VAZQUEZ|Angel|Bravo Murillo, 54| |Valencia|8|0|(   )-2027018|C|0,0|
+71|POLIGAS|SASTRE AMATO|Eloy|Pajaritos, 90| |Valencia|8|0|(   )-4013228|C|0,0|
+72|GREGASA|CANTERO RODRIGUEZ|Jose Manuel|Princesa, 16| |Villareal|12|0|(   )-7022398|C|2525751,18|
+73|TACIME|BUENDIA REDONDO|Eloy|Alberto Aguilera, 46| |Alicante|28|0|(   )-2026566|C|0,0|
+74|ARRIETA|CARDABA TEJERO|Oscar|Padul, 7| |Valencia|8|0|(   )-4006646|C|0,0|
+75|MACARRON S.A.|PULIDO ROJAS|Julian|Profesor Waksman, 17| |Atienza|19|0|(   )-7007908|C|0,0|
+76|PEREIRA|SALGADO CANTERO|Jose Manuel|Serrano, 55| |Alicante|28|0|(   )-2016960|C|0,0|
+77|LEM|CALLE HERAS|Javier|Escuelas, 42| |Alicante|28|0|(   )-4011844|C|1004690,46|
+78|FEAGAS|CEBRIAN PALOMO|Eloy|Escuelas, 82| |Alicante|28|0|(   )-7007156|C|0,0|
+79|ATT|LOPEZ CEBRIAN|Ana|Goya, 59| |Valencia|8|0|(   )-2032732|C|0,0|
+80|ROBLES|MARCOS BORRAS|Maria Jesus|Narvaez, 87| |Atienza|19|0|(   )-4023866|C|0,0|
+81|TACIME|CEBRIAN PRIETO|Carlos|Castellana, 37| |Alicante|28|0|(   )-7010322|C|1269389,62|
+82|RODIO|REDONDO ROJAS|Maria Jesus|Orfila, 70| |Alicante|28|0|(   )-2028376|C|0,0|
+83|REXPACS|PANIAGUA SIEIRO|Jose Luis|Drogueros, 46| |Granada|18|0|(   )-4022090|C|4565025,64|
+84|ARCONES|VAZQUEZ BOLANO|Ana|San Bernardo, 85| |Alicante|28|0|(   )-7004480|C|1286057,92|
+85|ADA|LUNA CARDABA|Reyes|Bravo Murillo, 24| |Alicante|28|0|(   )-2024062|C|0,0|
+86|GPU S.A.|GUIJARROBOYER|Felix|Bravo Murillo, 59| |Valencia|8|0|(   )-4019034|C|4750587,22|
+87|ADA|REVENGA LUNA|Antonio|Conde Torralba, 31| |Valencia|8|0|(   )-7020174|C|0,0|
+88|TABLAS|MARADONA MORENTE|Ana|Bravo Murillo, 84| |Azpeitia|20|0|(   )-2007902|C|0,0|
+89|MASIDER|OLIVA MOLERO|Felix|Sandoval, 63| |Alicante|28|0|(   )-4027954|C|7306205,32|
+90|SCOTCHMAN|GUERRA PANIAGUA|Eloy|Elfo, 35| |Alicante|28|0|(   )-7008704|C|0,0|
+91|VENTAUTO|PULIDO OLIVA|Luis|Princesa, 73| |Valencia|8|0|(   )-2006568|C|3916102,1|
+92|ESSA|AROCA RODRIGUEZ|Luisa|Alcala, 54| |Valencia|8|0|(   )-4021338|C|0,0|
+93|ARCO|OLIVA GARCIA|Jose Manuel|Escribanos, 69| |Alicante|28|0|(   )-7020398|C|0,0|
+94|SPOT IBERICA|SIEIRO MONTERO|Felix|Goya, 44| |Alicante|28|0|(   )-2029008|C|3627657,78|
+95|AUTOCARES SALAS|TEJERO LOPEZ|Carlos|Narvaez, 22| |Valencia|8|0|(   )-4021334|C|500384,16|
+96|DATAPOINT|MORENTE SALGADO|Ana|Reina Mercedes, 89| |Valencia|8|0|(   )-7012122|C|0,0|
+97|ROS|AMATO BOLANO|Ana|Ponzano, 95| |Sevilla|41|0|(   )-2030254|C|0,0|
+98|CASAZUL|SINDE CEBRIAN|Ana|Palacios, 67| |Alicante|28|0|(   )-4017436|C|1079965,66|
+99|ALFOMBRAS MAS|PRIETO CEBRIAN|Carlos|Bravo Murillo, 95| |Guadalajara|19|0|(   )-7023996|C|0,0|
+100|INTEL|VALDIVIESO AROCA|Luisa|Bravo Murillo, 49| |Valencia|8|0|(   )-2011086|C|0,0|
