@@ -330,106 +330,208 @@ INSERT INTO FORMAPAGOS VALUES ('CH','Cheque');
 INSERT INTO FORMAPAGOS VALUES ('BZ','Bizum');
 
 -- Inserciones en la tabla CLIENTES**
-INSERT INTO CLIENTES VALUES (1, 'MOTOROLA', 'BUENDIA CANTERO', 'Antonio', 'Duque de Medinacelli', 13, 'Valencia', 8, 0, '2028228', 'C', 0);
-INSERT INTO CLIENTES VALUES (2, 'RTC S.A.', 'LUNA REQUENA', 'Maria Jesus', 'Profesor Waksman', 49, 'Valencia', 8, 0, '4031048', 'C', 0);
-INSERT INTO CLIENTES VALUES (3, 'GUYON', 'ROJAS MORCILLO', 'Jose', 'Palencia', 37, 'Valencia', 8, 0, '7011254', 'C', 0);
-INSERT INTO CLIENTES VALUES (4, 'P.P.B.', 'BORRAS FAURA', 'Maria Jesus', 'Narvaez', 31, 'Alicante', 28, 0, '2017402', 'C', 12);
-INSERT INTO CLIENTES VALUES (5, 'ARCO', 'MOLERO HERAS', 'Pedro', 'Profesor Waksman', 51, 'Alicante', 28, 0, '4021796', 'C', 0);
-INSERT INTO CLIENTES VALUES (6, 'FCP S.A.', 'PALOMO VADILLO', 'Jesus Manuel', 'Orfila', 85, 'Alicante', 28, 0, '7005208', 'C', 0);
-INSERT INTO CLIENTES VALUES (7, 'MATE', 'SALGADO CANTERO', 'Jesus Manuel', 'Juan Belmonte', 53, 'Valencia', 8, 0, '2006524', 'C', 0);
-INSERT INTO CLIENTES VALUES (8, 'DRAPOSA', 'GARCIA SASTRE', 'Angel', 'Gran Via', 57, 'Alicante', 28, 0, '4014220', 'C', 0);
-INSERT INTO CLIENTES VALUES (9, 'ALCOLEA', 'CRISTOBAL OLIVA', 'Reyes', 'Narvaez', 48, 'Valencia', 8, 0, '7009908', 'C', 0);
-INSERT INTO CLIENTES VALUES (10, 'DEL OLMO', 'GUERRA ESTEVEZ', 'Maria Jesus', 'Profesor Waksman', 14, 'Alicante', 28, 0, '2013692', 'C', 0);
-INSERT INTO CLIENTES VALUES (11, 'CIFERSA', 'VAZQUEZ AMATO', 'Reyes', 'Goya', 33, 'Alicante', 28, 0, '4008714', 'C', 6);
-INSERT INTO CLIENTES VALUES (12, 'ATC', 'AMATO AMATO', 'Luis', 'Goyeneche', 60, 'Guadalajara', 19, 0, '7016752', 'C', 32);
-INSERT INTO CLIENTES VALUES (13, 'BARNICES DEVA', 'PELAEZ ESTEVEZ', 'Federico', 'Doctor Huya', 88, 'Valencia', 8, 0, '2007004', 'C', 44);
-INSERT INTO CLIENTES VALUES (14, 'ZENITH', 'MOLERO CANTERO', 'Jesus Manuel', 'Palacios', 86, 'Alicante', 28, 0, '4016324', 'C', 64);
-INSERT INTO CLIENTES VALUES (15, 'INTEL', 'CASTEL GONZALEZ', 'Andres', 'Castellana', 93, 'Valencia', 8, 0, '7000806', 'C', 64);
-INSERT INTO CLIENTES VALUES (16, 'LEM', 'REQUENA CEBRIAN', 'Federico', 'Fuencarral', 66, 'Granada', 18, 0, '2001512', 'C', 0);
-INSERT INTO CLIENTES VALUES (17, 'SPOT IBERICA', 'TORRES CEBRIAN', 'Javier', 'Princesa', 85, 'Valencia', 8, 0, '4013724', 'C', 0);
-INSERT INTO CLIENTES VALUES (18, 'RTC S.A.', 'ROJAS OLIVA', 'Reyes', 'Elche', 39, 'Valencia', 8, 0, '7004592', 'C', 0);
-INSERT INTO CLIENTES VALUES (19, 'REXPACS', 'TEJERO GUIJARRO', 'Luis', 'Bravo Murillo', 76, 'Soria', 42, 0, '2032140', 'C', 0);
-INSERT INTO CLIENTES VALUES (20, 'TALLERES MARFAN', 'AMATO REQUENA', 'Maria Jesus', 'Narvaez', 65, 'Valencia', 8, 0, '4031230', 'C', 0);
-INSERT INTO CLIENTES VALUES (21, 'FESAN', 'MORCILLO CASTEL', 'Jose Manuel', 'Fuencarral', 13, 'Valencia', 8, 0, '7032082', 'C', 0);
-INSERT INTO CLIENTES VALUES (22, 'TALLERES MARFAN', 'CANTERO LORANCA', 'Ana', 'Castro de Oro', 78, 'Valencia', 8, 0, '2011248', 'C', 0);
-INSERT INTO CLIENTES VALUES (23, 'DETECSA', 'SIEIRO VAZQUEZ', 'Maria Luisa', 'Serrano', 91, 'Alicante', 28, 0, '4028016', 'C', 58);
-INSERT INTO CLIENTES VALUES (24, 'FIMSA', 'CANTERO ANTON', 'Angel', 'Princesa', 41, 'Valencia', 8, 0, '7011906', 'C', 0);
-INSERT INTO CLIENTES VALUES (25, 'CIFERSA', 'REQUENA AROCA', 'Felipe', 'Roderos', 13, 'Alicante', 28, 0, '2031296', 'C', 0);
-INSERT INTO CLIENTES VALUES (26, 'POLIGAS', 'COLOR SOLCHAGA', 'Julian', 'Castro Serna', 70, 'Valencia', 8, 0, '4004886', 'C', 76);
-INSERT INTO CLIENTES VALUES (27, 'DSE', 'MONTERO REQUENA', 'Antonio', 'Ppe. de Vergara', 42, 'Alicante', 28, 0, '7026178', 'C', 42);
-INSERT INTO CLIENTES VALUES (28, 'GYM', 'MORCILLO CRISTO', 'Jose Luis', 'Princesa', 47, 'Soria', 42, 0, '2002332', 'C', 76);
-INSERT INTO CLIENTES VALUES (29, 'DSE', 'JAVI ORGUILA', 'Oscar', 'Avila', 88, 'Valencia', 8, 0, '4015688', 'C', 0);
-INSERT INTO CLIENTES VALUES (30, 'PEREIRA', 'HERAS ROJAS', 'Jesus Manuel', 'Goya', 48, 'Granada', 18, 0, '7011426', 'C', 84);
-INSERT INTO CLIENTES VALUES (31, 'AOL', 'PULIDO REVENGA', 'Alfonso', 'Pajaritos', 64, 'Alicante', 28, 0, '2006950', 'C', 0);
-INSERT INTO CLIENTES VALUES (32, 'DSE', 'REQUENA CRISTO', 'Eloy', 'Don Quijote', 95, 'Alicante', 28, 0, '4008500', 'C', 2);
-INSERT INTO CLIENTES VALUES (33, 'ELEUSIS', 'GONZALEZ LOPEZ', 'Angel', 'Serrano', 71, 'Valencia', 8, 0, '7001372', 'C', 0);
-INSERT INTO CLIENTES VALUES (34, 'ALBISA', 'GUERRA PRIETO', 'Jose Luis', 'Profesor Waksman', 8, 'Alicante', 28, 0, '2004460', 'C', 0);
-INSERT INTO CLIENTES VALUES (35, 'ATC', 'HERAS AROCA', 'Eloy', 'Elfo', 22, 'Alicante', 28, 0, '4013396', 'C', 1);
-INSERT INTO CLIENTES VALUES (36, 'CARO', 'PALOMO LOPEZ', 'Antonio', 'Serrano', 29, 'Valencia', 8, 0, '7004682', 'C', 0);
-INSERT INTO CLIENTES VALUES (37, 'GRIFFIN S. A.', 'LOPEZ PANIAGUA', 'Javier', 'Bravo Murillo', 94, 'Alicante', 28, 0, '2018346', 'C', 46);
-INSERT INTO CLIENTES VALUES (38, 'E.M.M.', 'MONTERO AROCA', 'Reyes', 'Profesor Waksman', 74, 'Valencia', 8, 0, '4015962', 'C', 0);
-INSERT INTO CLIENTES VALUES (39, 'RTP', 'ROJAS SINDE', 'Jaime', 'Alberto Aguilera', 80, 'Atienza', 19, 0, '7030160', 'C', 0);
-INSERT INTO CLIENTES VALUES (40, 'DRAPOSA', 'CANTERO ANTON', 'Luis', 'Bravo Murillo', 88, 'Sevilla', 41, 0, '2013106', 'C', 0);
-INSERT INTO CLIENTES VALUES (41, 'CINCA', 'PEREZ CORDOBA', 'Enrique', 'Princesa', 64, 'Barcelona', 8, 0, '4004522', 'C', 0);
-INSERT INTO CLIENTES VALUES (42, 'ALCATEL', 'ROMERO CAMPOS', 'Andres', 'Elfo', 37, 'Valencia', 8, 0, '2006914', 'C', 0);
-INSERT INTO CLIENTES VALUES (43, 'DETECSA', 'SIEIRO VAZQUEZ', 'Marcos', 'Goya', 84, 'Alicante', 28, 0, '2019250', 'C', 0);
-INSERT INTO CLIENTES VALUES (44, 'ELECNOR', 'MORCILLO CASTEL', 'Daniel', 'Don Quijote', 12, 'Madrid', 28, 0, '7035018', 'C', 0);
-INSERT INTO CLIENTES VALUES (45, 'FERROVIAL', 'REQUENA MARTIN', 'Eugenio', 'Alberto Aguilera', 34, 'Sevilla', 41, 0, '4007156', 'C', 0);
-INSERT INTO CLIENTES VALUES (46, 'FIMSA', 'GARCIA PASTOR', 'Pablo', 'Bravo Murillo', 7, 'Málaga', 29, 0, '2018840', 'C', 0);
-INSERT INTO CLIENTES VALUES (47, 'GRUPO ACS', 'CANTERO ANTON', 'Ismael', 'Avila', 16, 'Córdoba', 14, 0, '2027358', 'C', 0);
-INSERT INTO CLIENTES VALUES (48, 'INDRA', 'MARTINEZ FUENTE', 'Sergio', 'Castro Serna', 58, 'Granada', 18, 0, '7019546', 'C', 0);
-INSERT INTO CLIENTES VALUES (49, 'ISOLUX', 'GUTI NAVARRO', 'Rafael', 'Serrano', 27, 'Toledo', 45, 0, '4003124', 'C', 0);
-INSERT INTO CLIENTES VALUES (50, 'OHL', 'PEREZ DOMINGUEZ', 'Hugo', 'Profesor Waksman', 53, 'Bilbao', 48, 0, '2008462', 'C', 0);
-INSERT INTO CLIENTES VALUES (51, 'ROVER ALCISA', 'LOPEZ LOPEZ', 'Samuel', 'Castro de Oro', 91, 'Valencia', 8, 0, '7036014', 'C', 0);
-INSERT INTO CLIENTES VALUES (52, 'SACYR', 'HERNANDEZ REY', 'Fernando', 'Fuencarral', 36, 'Murcia', 30, 0, '2014752', 'C', 0);
-INSERT INTO CLIENTES VALUES (53, 'SANJOSE', 'VEGA MARQUEZ', 'Alejandro', 'Ppe. de Vergara', 82, 'Zaragoza', 50, 0, '7016582', 'C', 0);
-INSERT INTO CLIENTES VALUES (54, 'VOPSA', 'ROMAN CRESPO', 'David', 'Pajaritos', 26, 'Albacete', 2, 0, '4001820', 'C', 0);
-INSERT INTO CLIENTES VALUES (55, 'XYZ CONSTRUCCIONES', 'NUNEZ SANCHEZ', 'Juan', 'Roderos', 78, 'León', 24, 0, '7025410', 'C', 0);
-INSERT INTO CLIENTES VALUES (56, 'ARQUITECTURA MODERNA', 'TORRES RAMIREZ', 'Mario', 'Elfo', 48, 'Valencia', 8, 0, '2036521', 'C', 0);
-INSERT INTO CLIENTES VALUES (57, 'CIVILIA', 'GOMEZ GARRIDO', 'Roberto', 'Serrano', 31, 'Ciudad Real', 13, 0, '4009516', 'C', 0);
-INSERT INTO CLIENTES VALUES (58, 'TECNOOBRAS', 'LORENZO MEDINA', 'Jose Maria', 'Bravo Murillo', 17, 'Tarragona', 43, 0, '2017642', 'C', 0);
-INSERT INTO CLIENTES VALUES (59, 'CIVIL ENGINEERING', 'ORTEGA GIL', 'Alberto', 'Don Quijote', 22, 'Segovia', 40, 0, '7029458', 'C', 0);
-INSERT INTO CLIENTES VALUES (60, 'NUEVAS INFRAESTRUCTURAS', 'FERNANDEZ MORAL', 'Luis', 'Alberto Aguilera', 45, 'Oviedo', 33, 0, '7011230', 'C', 0);
-INSERT INTO CLIENTES VALUES (61, 'INFRAESTRUCTURAS DEL SUR', 'MARTIN PEREZ', 'Carlos', 'Avenida América', 12, 'Málaga', 29, 0, '6001245', 'C', 0);
-INSERT INTO CLIENTES VALUES (62, 'OBRAS Y SERVICIOS', 'HERRERA LOPEZ', 'Javier', 'Gran Vía', 88, 'Madrid', 28, 0, '6109876', 'C', 0);
-INSERT INTO CLIENTES VALUES (63, 'CONSTRUCCIONES DEL ESTE', 'DIAZ RAMOS', 'Antonio', 'Paseo de la Castellana', 156, 'Madrid', 28, 0, '6223458', 'C', 0);
-INSERT INTO CLIENTES VALUES (64, 'INFRAESTRUCTURAS NORTE', 'SANCHEZ MARTIN', 'Pedro', 'Diagonal', 23, 'Barcelona', 8, 0, '6336789', 'C', 0);
-INSERT INTO CLIENTES VALUES (65, 'VÍAS Y PUENTES', 'GONZALEZ CALLE', 'Raúl', 'Serrano', 41, 'Valencia', 8, 0, '6447890', 'C', 0);
-INSERT INTO CLIENTES VALUES (66, 'OBRAS CIVILES SA', 'LOPEZ GARCIA', 'Fernando', 'Alcalá', 97, 'Madrid', 28, 0, '6558901', 'C', 0);
-INSERT INTO CLIENTES VALUES (67, 'INGENIEROS NAVARRO', 'NAVARRO HERRERO', 'Luis', 'Velázquez', 52, 'Sevilla', 41, 0, '6669012', 'C', 0);
-INSERT INTO CLIENTES VALUES (68, 'SOLUCIONES CONSTRUCTIVAS', 'PEREZ MUÑOZ', 'Manuel', 'Colón', 5, 'Granada', 18, 0, '6770123', 'C', 0);
-INSERT INTO CLIENTES VALUES (69, 'ELECTROMECÁNICA SURESTE', 'ROMERO ORTIZ', 'Adrián', 'Goya', 25, 'Murcia', 30, 0, '6881234', 'C', 0);
-INSERT INTO CLIENTES VALUES (70, 'EDIFICACIONES MODERNAS', 'GUTIERREZ VEGA', 'David', 'Paseo Marítimo', 77, 'Alicante', 3, 0, '6992345', 'C', 0);
-INSERT INTO CLIENTES VALUES (71, 'POLIGAS', 'SASTRE AMATO', 'Eloy', 'Pajaritos', 90, 'Valencia', 8, 0, '4013228', 'C', 0);
-INSERT INTO CLIENTES VALUES (72, 'GREGASA', 'CANTERO PEREZ', 'Jose Manuel', 'Princesa', 16, 'Villareal', 12, 0, '7022398', 'C', 18);
-INSERT INTO CLIENTES VALUES (73, 'TACIME', 'BUENDIA REDONDO', 'Eloy', 'Alberto Aguilera', 46, 'Alicante', 28, 0, '2026566', 'C', 0);
-INSERT INTO CLIENTES VALUES (74, 'ARRIETA', 'CARDABA TEJERO', 'Oscar', 'Padul', 7, 'Valencia', 8, 0, '4006646', 'C', 0);
-INSERT INTO CLIENTES VALUES (75, 'MACARRON S.A.', 'PULIDO ROJAS', 'Julian', 'Profesor Waksman', 17, 'Atienza', 19, 0, '7007908', 'C', 0);
-INSERT INTO CLIENTES VALUES (76, 'PEREIRA', 'SALGADO CANTERO', 'Jose Manuel', 'Serrano', 55, 'Alicante', 28, 0, '2016960', 'C', 0);
-INSERT INTO CLIENTES VALUES (77, 'LEM', 'CALLE HERAS', 'Javier', 'Escuelas', 42, 'Alicante', 28, 0, '4011844', 'C', 46);
-INSERT INTO CLIENTES VALUES (78, 'FEAGAS', 'CEBRIAN PALOMO', 'Eloy', 'Escuelas', 82, 'Alicante', 28, 0, '7007156', 'C', 0);
-INSERT INTO CLIENTES VALUES (79, 'ATT', 'LOPEZ CEBRIAN', 'Ana', 'Goya', 59, 'Valencia', 8, 0, '2032732', 'C', 0);
-INSERT INTO CLIENTES VALUES (80, 'ROBLES', 'MARCOS BORRAS', 'Maria Jesus', 'Narvaez', 87, 'Atienza', 19, 0, '4023866', 'C', 0);
-INSERT INTO CLIENTES VALUES (81, 'TACIME', 'CEBRIAN PRIETO', 'Carlos', 'Castellana', 37, 'Alicante', 28, 0, '7010322', 'C', 62);
-INSERT INTO CLIENTES VALUES (82, 'RODIO', 'REDONDO ROJAS', 'Maria Jesus', 'Orfila', 70, 'Alicante', 28, 0, '2028376', 'C', 0);
-INSERT INTO CLIENTES VALUES (83, 'REXPACS', 'PANIAGUA SIEIRO', 'Jose Luis', 'Drogueros', 46, 'Granada', 18, 0, '4022090', 'C', 64);
-INSERT INTO CLIENTES VALUES (84, 'ARCONES', 'VAZQUEZ BOLANO', 'Ana', 'San Bernardo', 85, 'Alicante', 28, 0, '7004480', 'C', 92);
-INSERT INTO CLIENTES VALUES (85, 'ADA', 'LUNA CARDABA', 'Reyes', 'Bravo Murillo', 24, 'Alicante', 28, 0, '2024062', 'C', 0);
-INSERT INTO CLIENTES VALUES (86, 'GPU S.A.', 'GUIJARRO BOYER', 'Felix', 'Bravo Murillo', 59, 'Valencia', 8, 0, '4019034', 'C', 22);
-INSERT INTO CLIENTES VALUES (87, 'ADA', 'REVENGA LUNA', 'Antonio', 'Conde Torralba', 31, 'Valencia', 8, 0, '7020174', 'C', 0);
-INSERT INTO CLIENTES VALUES (88, 'TABLAS', 'MAS MORENTE', 'Ana', 'Bravo Murillo', 84, 'Azpeitia', 20, 0, '2007902', 'C', 0);
-INSERT INTO CLIENTES VALUES (89, 'MASIDER', 'OLIVA MOLERO', 'Felix', 'Sandoval', 63, 'Alicante', 28, 0, '4027954', 'C', 32);
-INSERT INTO CLIENTES VALUES (90, 'SCOTCHMAN', 'GUERRA PANIAGUA', 'Eloy', 'Elfo', 35, 'Alicante', 28, 0, '7008704', 'C', 0);
-INSERT INTO CLIENTES VALUES (91, 'VENTAUTO', 'PULIDO OLIVA', 'Luis', 'Princesa', 73, 'Valencia', 8, 0, '2006568', 'C', 1);
-INSERT INTO CLIENTES VALUES (92, 'ESSA', 'AROCA RODRIGUEZ', 'Luisa', 'Alcala', 54, 'Valencia', 8, 0, '4021338', 'C', 0);
-INSERT INTO CLIENTES VALUES (93, 'ARCO', 'OLIVA GARCIA', 'Jose Manuel', 'Escribanos', 69, 'Alicante', 28, 0, '7020398', 'C', 0);
-INSERT INTO CLIENTES VALUES (94, 'SPOT IBERICA', 'SIEIRO MONTERO', 'Felix', 'Goya', 44, 'Alicante', 28, 0, '2029008', 'C', 78);
-INSERT INTO CLIENTES VALUES (95, 'AUTOCARES SALAS', 'TEJERO LOPEZ', 'Carlos', 'Narvaez', 22, 'Valencia', 8, 0, '4021334', 'C', 16);
-INSERT INTO CLIENTES VALUES (96, 'DATAPOINT', 'MORENTE SALGADO', 'Ana', 'Reina Mercedes', 89, 'Valencia', 8, 0, '7012122', 'C', 0);
-INSERT INTO CLIENTES VALUES (97, 'ROS', 'AMATO BOLANO', 'Ana', 'Ponzano', 95, 'Sevilla', 41, 0, '2030254', 'C', 0);
-INSERT INTO CLIENTES VALUES (98, 'CASAZUL', 'SINDE CEBRIAN', 'Ana', 'Palacios', 67, 'Alicante', 28, 0, '4017436', 'C', 66);
-INSERT INTO CLIENTES VALUES (99, 'ALFOMBRAS MAS', 'PRIETO CEBRIAN', 'Carlos', 'Bravo Murillo', 95, 'Guadalajara', 19, 0, '7023996', 'C', 0);
-INSERT INTO CLIENTES VALUES (100, 'INTEL', 'VALDIVIES AROCA', 'Luisa', 'Bravo Murillo', 49, 'Valencia', 8, 0, '2011086', 'C', 0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (1,'MOTOROLA','BUENDIA CANTERO','Antonio','Duque de Medinacelli. 13', null ,'Valencia',8,0, '2028228','C',0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (2,'RTC S.A.','LUNA REQUENA','Maria Jesus','Profesor Waksman. 49' , null,'Valencia',8,0, 4031048,'C',0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (3,'GUYON','ROJAS MORCILLO','Jose','Palencia. 37' , null,'Valencia',8,0, 7011254,'C',0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (4,'P.P.B.',' BORRAS FAURA','Maria Jesus','Narvaez. 31 ',null,'Alicante',28,0,2017402,'C',7834305.12);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (5,' ARCO',' MOLERO HERAS',' Pedro',' Profesor Waksman. 51 ',  null,' Alicante', 28, 0,  4021796,'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (6,' FCP S.A.',' PALOMO VADILLO',' Jesus Manuel',' Orfila. 85 ',  null,' Alicante', 28, 0,  7005208,'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (7, 'MATE', 'SALGADO CANTERO', 'Jesus Manuel', 'Juan Belmonte. 53', NULL, 'Valencia', 8, 0, 2006524, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (8, 'DRAPOSA', 'GARCIA SASTRE', 'Angel', 'Gran Via. 57', NULL, 'Alicante', 28, 0, 4014220, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (9, 'ALCOLEA', 'CRISTOBAL OLIVA', 'Reyes', 'Narvaez. 48', NULL, 'Valencia', 8, 0, 7009908, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (10, 'DEL OLMO', 'GUERRA ESTEVEZ', 'Maria Jesus', 'Profesor Waksman. 14', NULL, 'Alicante', 28, 0, 2013692, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (11, 'CIFERSA', 'VAZQUEZ AMATO', 'Reyes', 'Goya. 33', NULL, 'Alicante', 28, 0, 4008714, 'C', 2942949.06);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (12, 'ATC', 'AMATO AMATO', 'Luis', 'Goyeneche. 60', NULL, 'Guadalajara', 19, 0, 7016752, 'C', 2069117.32);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (13, 'BARNICES DEVA', 'PELAEZ ESTEVEZ', 'Federico', 'Doctor Huya. 88', NULL, 'Valencia', 8, 0, 2007004, 'C', 1174628.44);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (14, 'ZENITH', 'MOLERO CANTERO', 'Jesus Manuel', 'Palacios. 86', NULL, 'Alicante', 28, 0, 4016324, 'C', 5518655.64);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (15, 'INTEL', 'CASTEL GONZALEZ', 'Andres', 'Castellana. 93', NULL, 'Valencia', 8, 0, 7000806, 'C', 1339824.64);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (16, 'LEM', 'REQUENA CEBRIAN', 'Federico', 'Fuencarral. 66', NULL, 'Granada', 18, 0, 2001512, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (17, 'SPOT IBERICA', 'TORRECILLAS CEBRIAN', 'Javier', 'Princesa. 85', NULL, 'Valencia', 8, 0, 4013724, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (18, 'RTC S.A.', 'ROJAS OLIVA', 'Reyes', 'Elche. 39', NULL, 'Valencia', 8, 0, 7004592, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (19, 'REXPACS', 'TEJERO GUIJARRO', 'Luis', 'Bravo Murillo. 76', NULL, 'Soria', 42, 0, 2032140, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (20, 'TALLERES MARFAN', 'AMATO REQUENA', 'Maria Jesus', 'Narvaez. 65', NULL, 'Valencia', 8, 0, 4031230, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (21, 'FESAN', 'MORCILLO CASTEL', 'Jose Manuel', 'Fuencarral. 13', NULL, 'Valencia', 8, 0, 7032082, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (22, 'TALLERES MARFAN', 'CANTERO LORANCA', 'Ana', 'Castro de Oro. 78', NULL, 'Valencia', 8, 0, 2011248, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (23, 'DETECSA', 'SIEIRO VAZQUEZ', 'Maria Luisa', 'Serrano. 91', NULL, 'Alicante', 28, 0, 4028016, 'C', 2474654.58);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (24, 'FIMSA', 'CANTERO ANTON', 'Angel', 'Princesa. 41', NULL, 'Valencia', 8, 0, 7011906, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (25, 'CIFERSA', 'REQUENA AROCA', 'Felipe', 'Roderos. 13', NULL, 'Alicante', 28, 0, 2031296, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (26, 'POLIGAS', 'COLORADO SOLCHAGA', 'Julian', 'Castro Serna. 70', NULL, 'Valencia', 8, 0, 4004886, 'C', 2912395.76);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (27, 'DSE', 'MONTERO REQUENA', 'Antonio', 'Ppe. de Vergara. 42', NULL, 'Alicante', 28, 0, 7026178, 'C', 2520847.42);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (28, 'GYM', 'MORCILLO CRISTOBAL', 'Jose Luis', 'Princesa. 47', NULL, 'Soria', 42, 0, 2002332, 'C', 2688528.76);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (29, 'DSE', 'FERNANDEZ ORGUILAR', 'Oscar', 'Avila. 88', NULL, 'Valencia', 8, 0, 4015688, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (30, 'PEREIRA', 'HERAS ROJAS', 'Jesus Manuel', 'Goya. 48', NULL, 'Granada', 18, 0, 7011426, 'C', 4951218.84);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (31, 'AOL', 'PULIDO REVENGA', 'Alfonso', 'Pajaritos. 64', NULL, 'Alicante', 28, 0, 2006950, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (32, 'DSE', 'REQUENA CRISTOBAL', 'Eloy', 'Don Quijote. 95', NULL, 'Alicante', 28, 0, 4008500, 'C', 313722.02);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (33, 'ELEUSIS', 'GONZALEZ LOPEZ', 'Angel', 'Serrano. 71', NULL, 'Valencia', 8, 0, 7001372, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (34, 'ALBISA', 'GUERRA PRIETO', 'Jose Luis', 'Profesor Waksman. 8', NULL, 'Alicante', 28, 0, 2004460, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (35, 'ATC', 'HERAS AROCA', 'Eloy', 'Elfo. 22', NULL, 'Alicante', 28, 0, 4013396, 'C', 4355603.1);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (36, 'CARO', 'PALOMO LOPEZ', 'Antonio', 'Serrano 29', NULL, 'Valencia', 8, 0, 7004682, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (37, 'GRIFFIN S.A.', 'LOPEZ PANIAGUA', 'Javier', 'Bravo Murillo 94', NULL, 'Alicante', 28, 0, 2018346, 'C', 6076421.46);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (38, 'E.M.M.', 'MONTERO AROCA', 'Reyes', 'Profesor Waksman 74', NULL, 'Valencia', 8, 0, 4015962, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (39, 'RTP', 'ROJAS SINDE', 'Jaime', 'Alberto Aguilera 80', NULL, 'Atienza', 19, 0, 7030160, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (40, 'DRAPOSA', 'CANTERO ANTON', 'Luis', 'Bravo Murillo 88', NULL, 'Sevilla', 41, 0, 2013106, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (41, 'DEPRETOL', 'REVENGA SALGADO', 'Julian', 'Isla Malta 49', NULL, 'Sevilla', 41, 0, 4030136, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (42, 'TEMINSA', 'BORRAS AROCA', 'Pedro', 'Princesa 69', NULL, 'Valencia', 8, 0, 7012154, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (43, 'DEL OLMO', 'PELAEZ TEJERO', 'Felix', 'Juan Belmonte 29', NULL, 'Valencia', 8, 0, 2024886, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (44, 'FCP S.A.', 'FERNANDEZ LOPEZ', 'Jaime', 'Orfila 46', NULL, 'Alicante', 28, 0, 4014620, 'C', 2845183.44);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (45, 'ROSCO', 'LARA CANTERO', 'Antonio', 'Bravo Murillo 95', NULL, 'Valencia', 8, 0, 7002316, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (46, 'ADA', 'MORCILLO MOLINA', 'Jose Luis', 'Sancho Pacheco 78', NULL, 'Valencia', 8, 0, 2008808, 'C', 130417.28);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (47, 'PALCOSA', 'GUIJARRO MOLINA', 'Angel', 'Alberto Leon 58', NULL, 'Valencia', 8, 0, 4021274, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (48, 'HARSHAW', 'REDONDO RODRIGUEZ', 'Jose', 'Ppe. de Vergara 68', NULL, 'Alicante', 28, 0, 7014264, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (49, 'ARCOSOL', 'COLORADO VALDIVIESO', 'Jesus Manuel', 'General Aranda 85', NULL, 'Valencia', 8, 0, 2031936, 'C', 3162395.38);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (50, 'ATR', 'BOYER HERAS', 'Antonio', 'Pedro Villar 84', NULL, 'Valencia', 8, 0, 4027696, 'C', 1571793.1);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (51, 'TALLERES', 'PAMO CALLE MORCILLO', 'Julian', 'San Jaime 87', NULL, 'Valencia', 8, 0, 7023136, 'C', 0.0);    
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (52, 'HIDROPONIA', 'GARCIA REDONDO', 'Jose Carlos', 'Albaida 53', NULL, 'Alicante', 28, 0, 2024322, 'C', 4999547.98);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (53, 'MOTOROLA', 'MARADONA CABELLO', 'Maria Jesus', 'Bravo Murillo 71', NULL, 'Alicante', 28, 0, 4028132, 'C', 1756132.82);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (54, 'LLORENS', 'ROJAS SINDE', 'Jose Luis', 'Bravo Murillo 69', NULL, 'Alicante', 28, 0, 7001766, 'C', 9662639.18);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (55, 'INFERSA', 'MORCILLO RODRIGUEZ', 'Jose Manuel', 'Dragon 31', NULL, 'Valencia', 8, 0, 2026990, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (56, 'CARLIPS', 'BORRAS ORGUILAR', 'Andres', 'Gran Via 27', NULL, 'Valencia', 8, 0, 4017778, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (57, 'BECOR', 'PELAEZ CALLE', 'Maria Jesus', 'Bravo Murillo 68', NULL, 'Valencia', 8, 0, 7023176, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (58, 'FITNESS', 'SASTRE AROCA', 'Ana', 'Pajaritos 38', NULL, 'Alicante', 28, 0, 2007882, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (59, 'INFERSA', 'RODRIGUEZ CANTERO', 'Luisa', 'Fuencarral 39', NULL, 'Alicante', 28, 0, 4027326, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (60, 'MACARRON S.A.', 'PALOMO REQUENA', 'Oscar', 'Bravo Murillo 51', NULL, 'Alicante', 28, 0, 7004742, 'C', 4847966.86);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (61, 'GYM', 'LORANCA REQUENA', 'Antonio', 'Alberto Aguilera 53', NULL, 'Malaga', 29, 0, 2007492, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (62, 'ENFERSA', 'ORGUILAR BOYER', 'Antonio', 'Castellana 2', NULL, 'Valencia', 8, 0, 4014000, 'C', 2116493.3);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (63, 'LEM', 'PRIETO PRIETO', 'Javier', 'Jaen 19', NULL, 'Valencia', 8, 0, 7016556, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (64, 'MONCLISA', 'FAURA REQUENA', 'Jose Luis', 'Goya 44', NULL, 'Valencia', 8, 0, 2022928, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (65, 'JULIO SOTO', 'SASTRE SIEIRO', 'Juan', 'Alarico 69', NULL, 'Granada', 18, 0, 4022522, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (66, 'HIDROPONIA', 'VADILLO RODRIGUEZ', 'Jose', 'Bravo Murillo 95', NULL, 'Valencia', 8, 0, 7019192, 'C', 6088441.04);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (67, 'PALCOSA', 'VADILLO ORGUILAR', 'Antonio', 'Sandoval 47', NULL, 'Alicante', 28, 0, 2014916, 'C', 13735675.4);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (68, 'MAJISA', 'CANTERO GARCIA', 'Jaime', 'Fuencarral 95', NULL, 'Valencia', 8, 0, 4016912, 'C', 9650181.1);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (69, 'CASAZUL', 'PULIDO AMATO', 'Luis', 'Jaen 22', NULL, 'Valencia', 8, 0, 7021504, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (70, 'MATE', 'CABELLO VAZQUEZ', 'Angel', 'Bravo Murillo 54', NULL, 'Valencia', 8, 0, 2027018, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (71, 'POLIGAS', 'SASTRE AMATO', 'Eloy', 'Pajaritos 90', NULL, 'Valencia', 8, 0, 4013228, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (72, 'GREGASA', 'CANTERO RODRIGUEZ', 'Jose Manuel', 'Princesa 16', NULL, 'Villareal', 12, 0, 7022398, 'C', 2525751.18);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (73, 'TACIME', 'BUENDIA REDONDO', 'Eloy', 'Alberto Aguilera 46', NULL, 'Alicante', 28, 0, 2026566, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (74, 'ARRIETA', 'CARDABA TEJERO', 'Oscar', 'Padul 7', NULL, 'Valencia', 8, 0, 4006646, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (75, 'MACARRON S.A.', 'PULIDO ROJAS', 'Julian', 'Profesor Waksman 17', NULL, 'Atienza', 19, 0, 7007908, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (76, 'PEREIRA', 'SALGADO CANTERO', 'Jose Manuel', 'Serrano 55', NULL, 'Alicante', 28, 0, 2016960, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (77, 'LEM', 'CALLE HERAS', 'Javier', 'Escuelas 42', NULL, 'Alicante', 28, 0, 4011844, 'C', 1004690.46);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (78, 'FEAGAS', 'CEBRIAN PALOMO', 'Eloy', 'Escuelas 82', NULL, 'Alicante', 28, 0, 7007156, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (79, 'ATT', 'LOPEZ CEBRIAN', 'Ana', 'Goya 59', NULL, 'Valencia', 8, 0, 2032732, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (80, 'ROBLES', 'MARCOS BORRAS', 'Maria Jesus', 'Narvaez 87', NULL, 'Atienza', 19, 0, 4023866, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (81, 'TACIME', 'CEBRIAN PRIETO', 'Carlos', 'Castellana 37', NULL, 'Alicante', 28, 0, 7010322, 'C', 1269389.62);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (82, 'RODIO', 'REDONDO ROJAS', 'Maria Jesus', 'Orfila 70', NULL, 'Alicante', 28, 0, 2028376, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (83, 'REXPACS', 'PANIAGUA SIEIRO', 'Jose Luis', 'Drogueros 46', NULL, 'Granada', 18, 0, 4022090, 'C', 4565025.64);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (84, 'ARCONES', 'VAZQUEZ BOLANO', 'Ana', 'San Bernardo 85', NULL, 'Alicante', 28, 0, 7004480, 'C', 1286057.92);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (85, 'ADA', 'LUNA CARDABA', 'Reyes', 'Bravo Murillo 24', NULL, 'Alicante', 28, 0, 2024062, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (86, 'GPU S.A.', 'GUIJARRO BOYER', 'Felix', 'Bravo Murillo 59', NULL, 'Valencia', 8, 0, 4019034, 'C', 4750587.22);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (87, 'ADA', 'REVENGA LUNA', 'Antonio', 'Conde Torralba 31', NULL, 'Valencia', 8, 0, 7020174, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (88, 'TABLAS', 'MARADONA MORENTE', 'Ana', 'Bravo Murillo 84', NULL, 'Azpeitia', 20, 0, 2007902, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (89, 'MASIDER', 'OLIVA MOLERO', 'Felix', 'Sandoval 63', NULL, 'Alicante', 28, 0, 4027954, 'C', 7306205.32);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (90, 'SCOTCHMAN', 'GUERRA PANIAGUA', 'Eloy', 'Elfo 35', NULL, 'Alicante', 28, 0, 7008704, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (91, 'VENTAUTO', 'PULIDO OLIVA', 'Luis', 'Princesa 73', NULL, 'Valencia', 8, 0, 2006568, 'C', 3916102.1);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (92, 'ESSA', 'AROCA RODRIGUEZ', 'Luisa', 'Alcala 54', NULL, 'Valencia', 8, 0, 4021338, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (93, 'ARCO', 'OLIVA GARCIA', 'Jose Manuel', 'Escribanos 69', NULL, 'Alicante', 28, 0, 7020398, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (94, 'SPOT IBERICA', 'SIEIRO MONTERO', 'Felix', 'Goya 44', NULL, 'Alicante', 28, 0, 2029008, 'C', 3627657.78);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (95, 'AUTOCARES SALAS', 'TEJERO LOPEZ', 'Carlos', 'Narvaez 22', NULL, 'Valencia', 8, 0, 4021334, 'C', 500384.16);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (96, 'DATAPOINT', 'MORENTE SALGADO', 'Ana', 'Reina Mercedes 89', NULL, 'Valencia', 8, 0, 7012122, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (97, 'ROS', 'AMATO BOLANO', 'Ana', 'Ponzano 95', NULL, 'Sevilla', 41, 0, 2030254, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (98, 'CASAZUL', 'SINDE CEBRIAN', 'Ana', 'Palacios 67', NULL, 'Alicante', 28, 0, 4017436, 'C', 1079965.66);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (99, 'ALFOMBRAS MAS', 'PRIETO CEBRIAN', 'Carlos', 'Bravo Murillo 95', NULL, 'Guadalajara', 19, 0, 7023996, 'C', 0.0);
+INSERT INTO CLIENTES (cliente, empresa, apellidos, nombre, direccion1, direccion2, poblacion, provincia, distrito, telefono, forma_pago, total_factura) 
+VALUES (100, 'INTEL', 'VALDIVIESO AROCA', 'Luisa', 'Bravo Murillo 49', NULL, 'Valencia', 8, 0, 2011086, 'C', 0.0);
+
+
 
 -- Inserciones en la tabla ALBARANES**
 INSERT INTO ALBARANES VALUES (1, 14, '2024-11-11', '2024-11-18', '2024-11-25', 'C', 'N');
@@ -542,4 +644,203 @@ SELECT articulo
 FROM articulos INNER JOIN proveedores ON proveedores.proveedor = articulos.proveedor
 WHERE articulos.proveedor = 12
 
+--10
+SELECT *
+FROM clientes c, albaranes ab, articulos ar, lineas l
+WHERE cliente = l cliente
+AND ab albaran = l albaran
+AND ar articulo = l articulo
+
 --11
+
+
+--13. Ver los albaranes del cliente número 5 en el rango de fechas 01/01/2024
+--y 31/03/2024
+SELECT *
+FROM albaranes
+WHERE cliente = 5
+
+--14. Obtener una lista de todas las provincias de los clientes y cuántos
+--clientes hay en cada provincia
+
+
+--15. Contar cuántos productos hay en cada unidad de medida
+SELECT unidad, COUNT(*)
+FROM articulos
+GROUP BY unidad
+
+--16. Número de albaranes que tiene cada formas de pago
+SELECT forma_pago, COUNT(*)
+FROM albaranes
+GROUP BY forma_pago
+
+--17. Precio total de las líneas que tiene cada albarán
+SELECT albaran, SUM(precio)
+FROM lineas
+GROUP BY albaran
+
+--18. Total de ventas por cliente y forma de pago
+SELECT cliente, forma_pago, SUM(total_factura)
+FROM clientes
+GROUP BY cliente, forma_pago
+--19. Obtener el total de ventas de cada producto por cada proveedor
+SELECT proveedor, articulo, SUM(precio)
+FROM lineas
+GROUP BY proveedor, articulo
+--20. Obtener el total de ventas por provincia de cliente y su promedio de
+--ventas
+SELECT provincia, SUM(total_factura), AVG(total_factura)
+FROM clientes
+GROUP BY provincia
+--21. Datos de clientes que hayan realizado pago aplazado (en 30, 60,…días)
+SELECT *
+FROM clientes
+WHERE forma_pago = 'A'
+
+--22. Precio total de las líneas enviadas en agosto del 2024 pagadas en
+--efectivo.
+SELECT SUM(precio)
+FROM lineas l, albaranes a
+WHERE l.albaran = a.albaran
+AND a.fec_entrega BETWEEN '2024-08-01' AND '2024-08-31'
+AND a.forma_pago = 'E'
+
+--23. Diferencia (ganancia) entre el precio de coste y venta de los artículos.
+SELECT articulo, pr_vent - pr_cost
+FROM articulos
+
+--24. Número de artículos que suministra cada proveedor.
+SELECT proveedor, COUNT(*)
+FROM articulos
+GROUP BY proveedor
+
+--25. Datos de los proveedores que suministran más de 3 artículos distintos.
+SELECT proveedor
+FROM articulos
+GROUP BY proveedor
+HAVING COUNT(DISTINCT articulo) > 3
+
+--26. Clientes con más de un albarán y el total facturado por cada uno de ellos
+SELECT cliente, COUNT(*), SUM(total_factura)
+FROM clientes
+GROUP BY cliente
+HAVING COUNT(*) > 1
+
+--27. Ver proveedores y sus productos más vendidos
+SELECT proveedor, articulo, MAX(cantidad)
+FROM lineas
+GROUP BY proveedor, articulo
+
+--28. Consultar el total de ventas por proveedor en el primer trimestre del
+--2024
+SELECT proveedor, SUM(precio + cantidad)
+FROM lineas l, albaranes a,
+WHERE l.albaran = a.albaran
+AND a.fecha_albaran BETWEEN '2024-01-01' AND '2024-03-31'
+GROUP BY proveedor
+
+--29. Ver los productos más vendidos por el cliente número 5 en el último
+--trimestre del 2024 ordenados por la cantidad vendida
+SELECT articulo, SUM(cantidad)
+FROM lineas l, albaranes a
+WHERE l.albaran = a.albaran
+AND a.cliente = 5
+AND a.fec_entrega BETWEEN '2024-10-01' AND '2024-12-31'
+GROUP BY articulo
+ORDER BY SUM(cantidad) DESC
+
+--30. Ver los proveedores con los productos que no han sido vendidos en los
+--últimos 6 meses
+SELECT proveedor, articulo
+FROM lineas l, albaranes
+WHERE l.albaran = albaranes.albaran
+AND albaranes.fecha_albaran NOT BETWEEN '2024-06-01' AND '2024-12-31'
+GROUP BY proveedor, articulo
+HAVING COUNT(*) = 0
+
+--a partir de aqui pueden aparecer subconsultas
+--31. Ver los productos que no tienen ventas y sus proveedores
+SELECT DISTINCT articulo
+FROM lineas
+WHERE articulo NOT IN (SELECT articulo 
+                       FROM lineas
+                       GROUP BY articulo)
+
+--32. Obtener los proveedores que tienen productos con existencias por
+--debajo del mínimo
+SELECT DISTINCT proveedor
+FROM articulos
+WHERE existencias < bajo_minimo
+
+--33. Clientes que han comprado un producto, articulo 101 (subconsulta con
+--JOIN)
+SELECT cliente
+FROM albaranes a, lineas l
+WHERE a.albaran = l.albaran
+AND l.articulo = 101
+
+--34. Proveedores con productos que no tienen ventas en el último año
+SELECT DISTINCT proveedor
+FROM articulos
+WHERE articulo NOT IN (SELECT articulo
+                       FROM lineas l, albaranes a
+                       WHERE l.albaran = a.albaran
+                       AND a.fecha_albaran BETWEEN '2023-01-01' AND '2023-12-31')
+
+--35. Ver los albaranes que tienen productos con precios por encima del
+--promedio de todos los productos
+SELECT albaran
+FROM lineas
+WHERE precio > (SELECT AVG(precio)
+                FROM lineas)
+
+--36. Obtener el cliente con el mayor total de compras
+SELECT DISTINCT proveedor
+FROM articulos
+WHERE existencias < bajo_minimo
+
+--37. Productos que tienen un precio superior al promedio de productos
+--vendidos por el proveedor 123
+SELECT articulo
+FROM articulos
+WHERE pr_vent > (SELECT AVG(pr_vent)
+                 FROM articulos
+                 WHERE proveedor = 123)
+
+--38. Clientes que no han realizado compras en el último año
+SELECT cliente
+FROM albaranes
+WHERE cliente NOT IN (SELECT cliente
+                      FROM albaranes
+                      WHERE fecha_albaran BETWEEN '2023-01-01' AND '2023-12-31')
+
+--39. Productos cuyo precio de venta está por debajo del precio de costo
+--promedio
+SELECT articulo
+FROM articulos
+WHERE pr_vent < (SELECT AVG(pr_cost)
+                 FROM articulos)
+
+--40. Clientes que han comprado más de 5 productos diferentes
+SELECT cliente
+FROM lineas
+GROUP BY cliente
+HAVING COUNT(DISTINCT articulo) > 5
+
+--41. Ver los proveedores con productos con existencias por encima de un
+--cierto umbral (100), pero sin ventas en los últimos 6 meses
+SELECT DISTINCT proveedor
+FROM articulos
+WHERE existencias > 100
+AND articulo NOT IN (SELECT articulo
+                     FROM lineas l, albaranes a
+                     WHERE l.albaran = a.albaran
+                     AND a.fecha_albaran BETWEEN '2024-06-01' AND '2024-12-31')
+
+--42. Ver los albaranes cuyo total es mayor que el promedio de todos los
+--albaranesº
+SELECT albaran
+FROM albaranes
+WHERE total > (SELECT AVG(total)
+               FROM albaranes)
+               
