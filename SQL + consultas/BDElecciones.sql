@@ -1,3 +1,9 @@
+CREATE TABLE COLEGIO(
+  numCole NUMBER(2) NOT NULL,
+  totalVotantes NUMBER(4),
+  CONSTRAINT pk_COLEGIO PRIMARY KEY (numCole)
+);
+
 CREATE TABLE MESA (
     letra CHAR(1),
     cole NUMBER(2),
@@ -290,11 +296,18 @@ SELECT (nulm), (nula), cole
 FROM mesa
 WHERE nula > 100 AND nulm > 100
 
+--8
+SELECT cole
+FROM mesa
+WHERE nulM + nulA >= ALL (SELECT SUM(nulA + nulM)
+                          FROM mesa)
+
 --9
 INSERT INTO demesa VALUES ('11111111A', '33333333C');
 INSERT INTO demesa VALUES ('22222222B', '55555555E');
-SELECT *
-FROM demesa
+SELECT niftitular AS titularosuplente
+FROM demesa UNION (SELECT nifSuplente
+					FROM demesa)
 
 --10
 SELECT nif
@@ -348,15 +361,33 @@ WHERE cole = (SELECT cole
 --20
 SELECT *
 FROM colegio
-WHERE numcole = (SELECT mesa.cole
+WHERE numcole = (SELECT cole
                 FROM mesa
-                WHERE nula + nulm > 1)
+                WHERE nulm >= ALL (SELECT nulM
+                                   FROM mesa))
+
+SELECT cole ,totalvotantes
+FROM colegio c,  mesa m
+WHERE cole = numcole
+GROUP BY cole, totalvotantes
+HAVING SUM (nulM) >= ALL (SELECT SUM(nulM)
+							FROM mesa
+							GROUP BY cole)
 
 --21
 SELECT siglas, nombre
 FROM partido
 WHERE siglas LIKE (SELECT partido
                   FROM autonomica
-                  WHERE votos > 1)
+                  WHERE votos >= ALL (SELECT votos
+                                      FROM autonomica))
+
+SELECT siglas, nombre
+FROM partido p, autonomica a
+WHERE siglas = partido
+GROUP BY siglas, nombre
+HAVING SUM (votos) >= ALL (SELECT SUM(votos)
+                            FROM autonomica
+                            GROUP BY partido)
 
 --22
