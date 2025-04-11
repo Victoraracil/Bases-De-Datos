@@ -101,3 +101,22 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Error al mostrar el juego incompleto: ' || SQLERRM);
 END MostrarJocIncomplet;
 /
+
+
+
+
+DECLARE
+CURSOR cursorJocs IS
+SELECT codi, nom FROM jocs ORDER BY nom;
+v_nom jocs.nom % TYPE;
+v_codi jocs.codi % TYPE;
+BEGIN
+OPEN cursorJocs;
+LOOP
+FETCH cursorJocs INTO v_codi, v_nom;
+EXIT WHEN cursorJocs % ROWCOUNT > 10
+OR cursorJocs % NOTFOUND;
+dbms_output.put_line(v_codi || ' - ' || v_nom);
+END LOOP;
+CLOSE cursorJocs;
+END;
