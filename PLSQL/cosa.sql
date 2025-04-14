@@ -228,3 +228,8 @@ Crea un trigger que anote "Sense revisar" en el nom d'un joc, en el cas que no s
 Crea una taula de còpia de seguretat dels jocs, i fes que s'anote també en ella cada joc que s'inserisca en
 la taula principal.*/
 
+Para examen entra:
+- 1 bloque
+- 1 procedimiento 
+- 1 funcion 
+- 1 triger
