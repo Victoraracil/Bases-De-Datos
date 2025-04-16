@@ -328,8 +328,6 @@ END MostrarJocIncomplet;
 /
 
 
-
-
 DECLARE
 CURSOR cursorJocs IS
 SELECT codi, nom FROM jocs ORDER BY nom;

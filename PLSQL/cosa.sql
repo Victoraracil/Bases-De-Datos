@@ -232,4 +232,222 @@ Para examen entra:
 - 1 bloque
 - 1 procedimiento 
 - 1 funcion 
+
+CREATE OR REPLACE PROCEDURE ver_emple
+AS
+CURSOR c_emple IS
+SELECT APELLIDO, FECHA_ALT
+FROM EMPLE
+ORDER BY APELLIDO;
+v_apellido VARCHAR2(10);
+v_fecha DATE;
+BEGIN
+OPEN c_emple;
+FETCH c_emple into v_apellido, v_fecha;
+WHILE c_emple%FOUND LOOP
+DBMS_OUTPUT.PUT_LINE( v_apellido||' * '||v_fecha);
+FETCH c_emple into v_apellido,v_fecha;
+END LOOP;
+CLOSE c_emple;
+END ver_emple;
+
+CREATE OR REPLACE FUNCTION sust_por_blancos(
+cad VARCHAR2)
+RETURN VARCHAR2
+AS
+nueva_cad VARCHAR2(30);
+car CHARACTER;
+BEGIN
+FOR i IN 1..LENGTH(cad) LOOP
+car:=SUBSTR(cad,i,1);
+IF (ASCII(car) NOT BETWEEN 65 AND 90)
+AND (ASCII(car) NOT BETWEEN 97 AND 122) THEN
+car :=' ';
+END IF;
+nueva_cad := nueva_cad || car;
+END LOOP;
+RETURN nueva_cad;
+END sust_por_blancos;
+
+2 Codificar un procedimiento que reciba una cadena y la visualice al revés.
+    CREATE OR REPLACE PROCEDURE cadena_reves(
+    vcadena VARCHAR2)
+    AS
+    vcad_reves VARCHAR2(80);
+    BEGIN
+    FOR i IN REVERSE 1..LENGTH(vcadena) LOOP
+    vcad_reves := vcad_reves || SUBSTR(vcadena,i,1);
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(vcad_reves);
+    END cadena_reves;
+
 - 1 triger
+
+CREATE OR REPLACE TRIGGER auditar_act_emp
+BEFORE INSERT OR DELETE
+ON EMPLE
+FOR EACH ROW
+BEGIN
+IF DELETING THEN
+INSERT INTO AUDITAREMPLE
+VALUES(TO_CHAR(sysdate,'DD/MM/YY*HH24:MI*')
+|| :OLD.EMP_NO|| '*' || :OLD.APELLIDO || '* BORRADO ');
+ELSIF INSERTING THEN
+INSERT INTO AUDITAREMPLE
+VALUES(TO_CHAR(sysdate,'DD/MM/YY*HH24:MI*')
+|| :NEW.EMP_NO || '*' || :NEW.APELLIDO||'* INSERCION ');
+END IF;
+END;
+
+   
+
+
+
+
+🔹 1. BLOQUES
+1. Mostrar preu i nom d’un article pel seu codi
+
+DECLARE
+  v_codi_article articles.id_article%TYPE;
+  v_nom articles.nom%TYPE;
+  v_preu articles.preu%TYPE;
+BEGIN
+  v_codi_article := '&codi_article'; -- demana per pantalla
+
+  SELECT nom, preu INTO v_nom, v_preu
+  FROM articles
+  WHERE id_article = v_codi_article;
+
+  DBMS_OUTPUT.PUT_LINE('Nom: ' || v_nom || ' - Preu: ' || v_preu);
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('No s''ha trobat cap article amb aquest codi.');
+END;
+
+2. Mostra el salari mitjà i empleats que el superen
+
+DECLARE
+  v_mitja NUMBER;
+BEGIN
+  SELECT AVG(salari) INTO v_mitja FROM empleats;
+
+  DBMS_OUTPUT.PUT_LINE('Salari mitjà: ' || v_mitja);
+
+  FOR emp IN (SELECT nom FROM empleats WHERE salari > v_mitja) LOOP
+    DBMS_OUTPUT.PUT_LINE('Empleat: ' || emp.nom);
+  END LOOP;
+END;
+
+3. Bloc amb gestió d errors i registre en log_errors
+
+DECLARE
+  v_nom productes.nom%TYPE;
+BEGIN
+  SELECT nom INTO v_nom FROM productes WHERE id_producte = 9999; -- forcem error
+  DBMS_OUTPUT.PUT_LINE('Producte: ' || v_nom);
+EXCEPTION
+  WHEN OTHERS THEN
+    INSERT INTO log_errors(missatge, data_error)
+    VALUES(SQLERRM, SYSDATE);
+    DBMS_OUTPUT.PUT_LINE('Error registrat.');
+END;
+
+🔹 2. PROCEDIMIENTOS
+4. actualitza_salari
+
+CREATE OR REPLACE PROCEDURE actualitza_salari(
+  p_id_empleat IN empleats.id_empleat%TYPE,
+  p_percentatge IN NUMBER
+) AS
+BEGIN
+  UPDATE empleats
+  SET salari = salari * (1 + p_percentatge / 100)
+  WHERE id_empleat = p_id_empleat;
+  COMMIT;
+END;
+
+5. afegir_client
+
+CREATE OR REPLACE PROCEDURE afegir_client(
+  p_nom IN clients.nom%TYPE,
+  p_adreca IN clients.adreca%TYPE,
+  p_email IN clients.email%TYPE
+) AS
+BEGIN
+  INSERT INTO clients(nom, adreca, email)
+  VALUES(p_nom, p_adreca, p_email);
+  COMMIT;
+END;
+
+6. esborrar_comanda
+
+CREATE OR REPLACE PROCEDURE esborrar_comanda(p_id_comanda IN comandes.id_comanda%TYPE) AS
+BEGIN
+  DELETE FROM linies_comanda WHERE id_comanda = p_id_comanda;
+  DELETE FROM comandes WHERE id_comanda = p_id_comanda;
+  COMMIT;
+END;
+
+🔹 3. FUNCIONS
+7. salari_anual
+
+CREATE OR REPLACE FUNCTION salari_anual(p_id_empleat IN empleats.id_empleat%TYPE)
+RETURN NUMBER IS
+  v_salari empleats.salari%TYPE;
+BEGIN
+  SELECT salari INTO v_salari FROM empleats WHERE id_empleat = p_id_empleat;
+  RETURN v_salari * 12;
+END;
+
+8. descompte_total
+
+CREATE OR REPLACE FUNCTION descompte_total(p_id_comanda IN NUMBER)
+RETURN NUMBER IS
+  v_total NUMBER := 0;
+BEGIN
+  SELECT SUM(preu_unitari * quantitat * descompte) INTO v_total
+  FROM linies_comanda
+  WHERE id_comanda = p_id_comanda;
+
+  RETURN NVL(v_total, 0);
+END;
+
+9. es_major_d_edat
+
+CREATE OR REPLACE FUNCTION es_major_d_edat(p_data_naixement IN DATE)
+RETURN BOOLEAN IS
+BEGIN
+  RETURN MONTHS_BETWEEN(SYSDATE, p_data_naixement) / 12 >= 18;
+END;
+
+🔹 4. TRIGGERS
+10. Evitar eliminar productes amb estoc
+
+CREATE OR REPLACE TRIGGER trg_prevent_eliminar_producte
+BEFORE DELETE ON productes
+FOR EACH ROW
+BEGIN
+  IF :OLD.estoc > 0 THEN
+    RAISE_APPLICATION_ERROR(-20001, 'No es pot eliminar productes amb estoc disponible.');
+  END IF;
+END;
+
+11. Trigger d’auditoria sobre clients
+
+CREATE OR REPLACE TRIGGER trg_auditoria_clients
+AFTER UPDATE ON clients
+FOR EACH ROW
+BEGIN
+  INSERT INTO log_clients(id_client, usuari, data_modificacio)
+  VALUES(:OLD.id_client, USER, SYSDATE);
+END;
+
+12. Trigger per a còpia de seguretat en jocs_backup
+
+CREATE OR REPLACE TRIGGER trg_backup_jocs
+AFTER INSERT ON jocs
+FOR EACH ROW
+BEGIN
+  INSERT INTO jocs_backup(id_joc, nom, categoria, data_backup)
+  VALUES(:NEW.id_joc, :NEW.nom, :NEW.categoria, SYSDATE);
+END;
