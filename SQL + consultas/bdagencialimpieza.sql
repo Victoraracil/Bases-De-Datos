@@ -289,68 +289,192 @@ GROUP BY a.nombre AND a.capacidad
 HAVING COUNT(DISTINCT c.telefono) > 1;
 
 -- 13. Mostrar el nombre y email de los empleados que no tienen asignado ningún artículo
+SELECT e.nombre, e.email
+FROM empleados e
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM asignar a
+    WHERE a.nif = e.nif
+);
 
 -- 14. Obtener la vivienda con mayor superficie útil (UTIL)
+SELECT *
+FROM vivienda
+WHERE util = (SELECT MAX(util) FROM vivienda);
+
 
 -- 15. Listar las viviendas y el número de servicios que tienen contratados
+SELECT v.direccion, COUNT(c.codigo) AS num_servicios
+FROM vivienda v
+JOIN contratar c ON v.telefono = c.telefono
+GROUP BY v.direccion;
 
 -- 16. Mostrar el total recaudado por cada servicio (sumando tarifas por vivienda contratada)
+SELECT s.nombre, SUM(s.tarifa) AS total_recaudado
+FROM servicio s
+JOIN contratar c ON s.codigo = c.codigo
+GROUP BY s.nombre;
 
 -- 17. Obtener el nombre del empleado que ha asignado la mayor cantidad total de artículos (sumando CANTIDAD)
+SELECT e.nombre, SUM(a.cantidad) AS total_articulos
+FROM empleados e
+JOIN asignar a ON e.dni = a.dni
+GROUP BY e.nombre
+ORDER BY total_articulos DESC
+LIMIT 1;
 
 -- 18. Mostrar el artículo más caro que ha sido asignado a alguna vivienda
+SELECT a.nombre, MAX(a.precio) AS precio
+FROM articulo a
+JOIN asignar b ON a.nombre = b.nombre
+GROUP BY a.nombre
+ORDER BY precio DESC
+LIMIT 1;
 
 -- 19. Mostrar todas las viviendas que tienen contratados servicios con tarifa superior al promedio
+SELECT v.*
+FROM vivienda v
+JOIN contratar c ON v.telefono = c.telefono
+JOIN servicio s ON c.codigo = s.codigo
+WHERE s.tarifa > (SELECT AVG(tarifa) FROM servicio);
 
 -- 20. Mostrar por cada propietario la población donde tiene más viviendas registradas
+SELECT p.nombre, v.poblacion, COUNT(v.id) AS num_viviendas
+FROM propietarios p
+JOIN vivienda v ON p.nif = v.nif
+GROUP BY p.nombre, v.poblacion
+ORDER BY num_viviendas DESC
+LIMIT 1;
 
 -- 21. Mostrar los nombres de los empleados que viven en "Alicante".
+SELECT e.nombre
+FROM empleados e
+JOIN vivienda v ON e.dni = v.dni
+WHERE UPPER(v.poblacion) = 'ALICANTE';
 
 -- 22. Listar todas las actividades de los servicios sin duplicados.
+SELECT DISTINCT s.actividad
+FROM servicio s;
 
 -- 23. Mostrar los nombres de los artículos cuyo precio es mayor o igual a 5 euros.
+SELECT a.nombre
+FROM articulo a
+WHERE a.precio >= 5;
 
 -- 24. Motrar cuántos empleados hay en total.
+SELECT COUNT(*) AS total_empleados
+FROM empleados;
 
 -- 25. Ver todos los propietarios ordenados alfabéticamente por nombre.
+SELECT p.nombre
+FROM propietarios p
+ORDER BY p.nombre;
 
 -- 26. Mostrar las viviendas que tienen suelo de tipo "Parqué".
+SELECT v.*
+FROM vivienda v
+WHERE UPPER(v.suelo) = 'PARQUÉ';
 
 -- 27. Listar los nombres de los empleados y la cantidad total de artículos asignados.
+SELECT e.nombre, SUM(a.cantidad) AS total_articulos
+FROM empleados e
+JOIN asignar a ON e.dni = a.dni
+GROUP BY e.nombre;
 
 -- 28. Mostrar nombre y población de los propietarios que tienen al menos una vivienda.
+SELECT p.nombre, v.poblacion
+FROM propietarios p
+JOIN vivienda v ON p.nif = v.nif
+GROUP BY p.nombre, v.poblacion;
 
 -- 29. Listar los teléfonos de las viviendas que no tienen servicios contratados.
+SELECT v.telefono
+FROM vivienda v
+LEFT JOIN contratar c ON v.telefono = c.telefono
+WHERE c.telefono IS NULL;
 
 -- 30. Mostrar los nombres de los artículos que han sido asignados a más de 3 viviendas.
+SELECT a.nombre
+FROM articulo a
+JOIN asignar b ON a.nombre = b.nombre
+GROUP BY a.nombre
+HAVING COUNT(DISTINCT b.nif) > 3;
 
 -- 31. Listar los servicios con una tarifa superior al promedio y el número de viviendas que los contrataron.
+SELECT s.nombre, s.tarifa, COUNT(c.telefono) AS num_viviendas
+FROM servicio s
+JOIN contratar c ON s.codigo = c.codigo
+GROUP BY s.nombre, s.tarifa
+HAVING s.tarifa > (SELECT AVG(tarifa) FROM servicio);
 
 -- 32. Obtener los tres artículos más utilizados (más cantidad total asignada).
+SELECT a.nombre, SUM(b.cantidad) AS total_asignado
+FROM articulo a
+JOIN asignar b ON a.nombre = b.nombre
+GROUP BY a.nombre
+ORDER BY total_asignado DESC
+LIMIT 3;
 
 -- 33. Mostrar las viviendas y el número total de artículos diferentes asignados a cada una.
+SELECT v.direccion, COUNT(DISTINCT a.nombre) AS num_articulos
+FROM vivienda v
+JOIN asignar a ON v.telefono = a.nif
+GROUP BY v.direccion;
 
 -- 34. Listar los empleados que comparten el mismo teléfono que una vivienda (relación directa).
+SELECT e.nombre
+FROM empleados e
+JOIN vivienda v ON e.dni = v.dni
+WHERE e.telefono = v.telefono;
 
 -- 35. Para cada propietario, mostrar la dirección de su vivienda más grande (por superficie útil).
+SELECT p.nombre, v.direccion
+FROM propietarios p
+JOIN vivienda v ON p.nif = v.nif
+WHERE v.util = (SELECT MAX(util) FROM vivienda WHERE nif = p.nif);
 
 -- 36. Actualizar el email de un empleado específico
+UPDATE empleados
+SET email = 'nuevo_email@example.com'
+WHERE dni = '12345678A';
 
 -- 37. Cambiar la actividad del servicio con código ‘S001’ a ‘Pulido de suelos’
+UPDATE servicio
+SET actividad = 'Pulido de suelos'
+WHERE codigo = 'S001';
 
 -- 38. Aumentar en 10% el precio de todos los artículos que cuesten menos de 5 euros
+UPDATE articulo
+SET precio = precio * 1.1
+WHERE precio < 5;
 
 -- 39. Actualizar la provincia de todos los propietarios de San Juan a “Valencia”
+UPDATE propietarios
+SET provincia = 'Valencia'
+WHERE poblacion = 'San Juan';
 
 -- 40. Reducir la tarifa en 20 euros para todos los servicios del turno “Tarde”
+UPDATE servicio
+SET tarifa = tarifa - 20
+WHERE turno = 'Tarde';
 
 -- 41. Eliminar un artículo específico por nombre y capacidad
+DELETE FROM articulo
+WHERE nombre = 'nombre_articulo' AND capacidad = 'capacidad_articulo';
 
 -- 42. Eliminar todos los empleados nacidos antes de 1980
+DELETE FROM empleados
+WHERE fecha_nacimiento < '1980-01-01';
 
 -- 43. Borrar todas las asignaciones de artículos de una vivienda específica
+DELETE FROM asignar
+WHERE nif = 'nif_vivienda_especifica';
 
 -- 44. Eliminar todos los servicios cuya tarifa sea mayor a 250 euros
+DELETE FROM servicio
+WHERE tarifa > 250;
 
 -- 45. Eliminar todas las viviendas que no tengan artículos asignados
+DELETE FROM vivienda
+WHERE telefono NOT IN (SELECT DISTINCT nif FROM asignar);
 
