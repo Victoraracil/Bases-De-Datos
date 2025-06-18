@@ -161,14 +161,15 @@ CREATE TABLE PRODUCTES (
     CODI_PRODUCTE NUMBER PRIMARY KEY,
     DESCRIPCIO VARCHAR2(100),
     COST NUMBER
-);
+)
 /
 CREATE OR REPLACE FUNCTION PVP(codi_producte IN NUMBER, descripcio IN VARCHAR2, cost IN NUMBER) RETURN NUMBER IS
     V_PRECIO NUMBER;
     v_count NUMBER;
     V_CODIGO NUMBER;
 BEGIN
-        SELECT CODI_PRODUCTE, COST, COUNT(*) INTO V_CODIGO, V_PRECIO, v_count, FROM PRODUCTES WHERE CODI_PRODUCTE = codi_producte;
+        SELECT CODI_PRODUCTE, COST, COUNT(*) INTO V_CODIGO, V_PRECIO, v_count
+        FROM PRODUCTES WHERE CODI_PRODUCTE = codi_producte;
         
         IF v_count = 0 THEN
             INSERT INTO PRODUCTES (CODI_PRODUCTE, DESCRIPCIO, COST) VALUES (codi_producte, descripcio, cost);
@@ -197,27 +198,6 @@ BEGIN
 
 
 --ejemplo
-CREATE OR REPLACE TRIGGER nouJoc BEFORE INSERT ON jocs
-FOR EACH ROW
-BEGIN
-:NEW.codiPlataforma := LOWER(:NEW.codiPlataforma);
-END;
-
-CREATE TRIGGER jocEsborrat AFTER DELETE ON jocs
-FOR EACH ROW
-BEGIN
-INSERT INTO jocsEsborrats VALUES(:OLD.codi, :OLD.nom);
-END;
-
-/*Exercici proposat 06.09a:
-Crea un trigger que force al fet que, quan es guarda una nova plataforma, el seu codi s'emmagatzeme
-en minúscules.*/
-CREATE OR REPLACE TRIGGER nouJoc 
-BEFORE INSERT ON codi
-FOR EACH ROW
-BEGIN
-:NEW.codi := LOWER(:NEW.codi);
-END;
 
 /*Exercici proposat 06.09b:
 Crea un trigger que anote "Sense revisar" en el nom d'un joc, en el cas que no s'haja indicat aquest nom
@@ -227,11 +207,6 @@ Crea un trigger que anote "Sense revisar" en el nom d'un joc, en el cas que no s
 /*Exercici proposat 06.09c:
 Crea una taula de còpia de seguretat dels jocs, i fes que s'anote també en ella cada joc que s'inserisca en
 la taula principal.*/
-
-Para examen entra:
-- 1 bloque
-- 1 procedimiento 
-- 1 funcion 
 
 CREATE OR REPLACE PROCEDURE ver_emple
 AS
@@ -251,23 +226,21 @@ END LOOP;
 CLOSE c_emple;
 END ver_emple;
 
-CREATE OR REPLACE FUNCTION sust_por_blancos(
-cad VARCHAR2)
-RETURN VARCHAR2
-AS
-nueva_cad VARCHAR2(30);
-car CHARACTER;
-BEGIN
-FOR i IN 1..LENGTH(cad) LOOP
-car:=SUBSTR(cad,i,1);
-IF (ASCII(car) NOT BETWEEN 65 AND 90)
-AND (ASCII(car) NOT BETWEEN 97 AND 122) THEN
-car :=' ';
-END IF;
-nueva_cad := nueva_cad || car;
-END LOOP;
-RETURN nueva_cad;
-END sust_por_blancos;
+CREATE OR REPLACE FUNCTION sust_por_blancos( cad VARCHAR2)
+  RETURN VARCHAR2 AS nueva_cad VARCHAR2(30);
+  car CHARACTER;
+  BEGIN
+    FOR i IN 1..LENGTH(cad) LOOP
+    car:=SUBSTR(cad,i,1);
+    IF (ASCII(car) NOT BETWEEN 65 AND 90)
+    AND (ASCII(car) NOT BETWEEN 97 AND 122) THEN
+    car :=' ';
+    END IF;
+    nueva_cad := nueva_cad || car;
+    END LOOP;
+    RETURN nueva_cad;
+  END sust_por_blancos;
+/
 
 2 Codificar un procedimiento que reciba una cadena y la visualice al revés.
     CREATE OR REPLACE PROCEDURE cadena_reves(
@@ -280,29 +253,6 @@ END sust_por_blancos;
     END LOOP;
     DBMS_OUTPUT.PUT_LINE(vcad_reves);
     END cadena_reves;
-
-- 1 triger
-
-CREATE OR REPLACE TRIGGER auditar_act_emp
-BEFORE INSERT OR DELETE
-ON EMPLE
-FOR EACH ROW
-BEGIN
-IF DELETING THEN
-INSERT INTO AUDITAREMPLE
-VALUES(TO_CHAR(sysdate,'DD/MM/YY*HH24:MI*')
-|| :OLD.EMP_NO|| '*' || :OLD.APELLIDO || '* BORRADO ');
-ELSIF INSERTING THEN
-INSERT INTO AUDITAREMPLE
-VALUES(TO_CHAR(sysdate,'DD/MM/YY*HH24:MI*')
-|| :NEW.EMP_NO || '*' || :NEW.APELLIDO||'* INSERCION ');
-END IF;
-END;
-
-   
-
-
-
 
 🔹 1. BLOQUES
 1. Mostrar preu i nom d’un article pel seu codi
@@ -418,36 +368,4 @@ CREATE OR REPLACE FUNCTION es_major_d_edat(p_data_naixement IN DATE)
 RETURN BOOLEAN IS
 BEGIN
   RETURN MONTHS_BETWEEN(SYSDATE, p_data_naixement) / 12 >= 18;
-END;
-
-🔹 4. TRIGGERS
-10. Evitar eliminar productes amb estoc
-
-CREATE OR REPLACE TRIGGER trg_prevent_eliminar_producte
-BEFORE DELETE ON productes
-FOR EACH ROW
-BEGIN
-  IF :OLD.estoc > 0 THEN
-    RAISE_APPLICATION_ERROR(-20001, 'No es pot eliminar productes amb estoc disponible.');
-  END IF;
-END;
-
-11. Trigger d’auditoria sobre clients
-
-CREATE OR REPLACE TRIGGER trg_auditoria_clients
-AFTER UPDATE ON clients
-FOR EACH ROW
-BEGIN
-  INSERT INTO log_clients(id_client, usuari, data_modificacio)
-  VALUES(:OLD.id_client, USER, SYSDATE);
-END;
-
-12. Trigger per a còpia de seguretat en jocs_backup
-
-CREATE OR REPLACE TRIGGER trg_backup_jocs
-AFTER INSERT ON jocs
-FOR EACH ROW
-BEGIN
-  INSERT INTO jocs_backup(id_joc, nom, categoria, data_backup)
-  VALUES(:NEW.id_joc, :NEW.nom, :NEW.categoria, SYSDATE);
 END;

@@ -61,11 +61,17 @@ SELECT nombre as nombreproducto, precio as precioeuro
 FROM producto
 
 Lista los nombres y los precios de todos los productos de la tabla producto, convirtiendo los nombres a mayúscula.
+SELECT UPPER(nombre), UPPER(precio)
+FROM producto
 
 Lista los nombres y los precios de todos los productos de la tabla producto, convirtiendo los nombres a minúscula.
+SELECT LOWER(nombre), LOWER(precio)
+FROM producto
 
 Lista el nombre de todos los fabricantes en una columna, y en otra columna obtenga en mayúsculas los dos primeros 
 caracteres del nombre del fabricante.
+SELECT LOWER(nombre), LOWER(precio)
+FROM producto
 
 Lista los nombres y los precios de todos los productos de la tabla producto, redondeando el valor del precio.
 
@@ -185,6 +191,10 @@ Calcula la media del precio de todos los productos.
 Calcula el precio más barato de todos los productos.
 
 Calcula el precio más caro de todos los productos.
+SELECT precio
+FROM productos
+WHERE precio = (SELECT MAX(precio)
+                FROM productos)
 
 Lista el nombre y el precio del producto más barato.
 
@@ -253,7 +263,11 @@ Devuelve todos los datos de los productos que tienen el mismo precio que el prod
 Lista el nombre del producto más caro del fabricante Lenovo.
 
 Lista el nombre del producto más barato del fabricante Hewlett-Packard.
-
+SELECT nombre
+FROM producto
+WHERE precio = (SELECT MIN(precio)
+                FROM fabricante
+                WHERE UPPER(nombre) LIKE 'Hewlett-Packard ')
 Devuelve todos los productos de la base de datos que tienen un precio mayor o igual al producto más caro del fabricante Lenovo.
 
 Lista todos los productos del fabricante Asus que tienen un precio superior al precio medio de todos sus productos.
@@ -285,7 +299,11 @@ Devuelve los nombres de los fabricantes que no tienen productos asociados. (Util
 Lista el nombre de cada fabricante con el nombre y el precio de su producto más caro.
 
 Devuelve un listado de todos los productos que tienen un precio mayor o igual a la media de todos los productos de su mismo fabricante.
-
+SELECT nombre
+FrOM productos
+WHERE precio >= (SELECT AVG(precio), nombre
+                  FROM productos
+                  GROUP BY nombre)
 Lista el nombre del producto más caro del fabricante Lenovo.
 
 1.1.8 Subconsultas (En la cláusula HAVING)
